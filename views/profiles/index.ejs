@@ -1,0 +1,44 @@
+<% include ../partials/header %> 
+    
+     <header class="jumbotron">
+         <div class="container">
+             <h1>Welcome To DineMe!</h1>
+             <p>Make Friends Over Dinner Now!</p>
+             <p> <% var bool = false, profileConsider%>
+             
+             <% profiles.forEach(function(profile){ %>
+                <% if (user && profile.author.username === user.username) { %>
+                           <% bool = true; %>
+                           <% profileConsider = profile;%>
+               <% } %>
+           <%  }); %>
+             
+                <% if (!bool) { %>
+                <a class="btn btn-primary btn-lg" href="/profiles/new">Add An Event</a>
+                <% } else {%>
+                <a class="btn btn-primary btn-lg" href="/profiles/<%=profileConsider._id%>/edit">Edit Your Event</a>
+                <% } %>
+             </p>
+              <p>
+           
+             </p>
+         </div>
+     </header>
+     
+     <div class="row text-center flex-wrap" id="profile-grid">
+        <% profiles.forEach(function(profile){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                   <img src="<%= profile.image %>">
+                   <div class="caption">
+                       <h4><%= profile.name %></h4>
+                   </div>
+                   <p>
+                       <a href="/profiles/<%= profile._id %>" class="btn btn-primary">More Info</a>
+                   </p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+
+<% include ../partials/footer %>
