@@ -5,10 +5,7 @@
         <h1 style="text-align: center">Create a New DineMe Event</h1>
         <div style="width: 30%; margin: 25px auto;">
             <form action="/profiles" method="POST">
-                <div class="form-group">
-                    <label for="name">Date and Time for Dinner</label>
-                   <input type="date" name = "date" min="2019-03-31" max="2019-04-10" step="1">
-                </div>
+
                              <div class="row">
           <div class = "col-sm-12">                                       
         <label for="gender">Gender</label>
@@ -29,24 +26,39 @@
         </div>
     </div>
 </div>
+                 <div class="row">
+    <div class = "col-sm-12">                                       
+        <label for="q1">How many people would you like to have dinner with?</label>
+          <div class="input-group"> 
+            <input placeholder= "Select an option from dropdown" name = "q1" type="TextBox" ID="datebox0" Class="form-control"></input>
+             <div class="input-group-btn">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+                <ul  id="demolist0" class="dropdown-menu">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                   <li><a href="#">3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
     <div class="row">
         <div class='col-sm-12'>
              <label for="calendar">Choose Date and Time for Dinner</label>
+
             <div class="form-group">
                 <div class='input-group date' id='datetimepicker1'>
-                    <input name = "calendar" type='text' class="form-control" />
-                    <span class="input-group-addon">
+                    <input name = "calendar" type='text' id = "datetime" class="form-control" />
+                    <span id = "calendar" class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>
                 </div>
             </div>
         </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-        </script>
+
     </div>
 
 
@@ -57,18 +69,41 @@
                     <input class="form-control" type="number" name="year" id="year" placeholder="2022" step="1" min="2019" max = "2022" required>
 </div>
 
+
+
+
+                
  <div class="row">
     <div class = "col-sm-12">                                       
-        <label for="q1">I'm convinced that</label>
+        <label for="q1">My biggest insecurity is</label>
           <div class="input-group"> 
-            <input placeholder= "Select an option from dropdown" name = "q1" type="TextBox" ID="datebox1" Class="form-control"></input>
+            <input placeholder= "Select an option from dropdown" name = "q1" type="TextBox" ID="datebox2" Class="form-control"></input>
              <div class="input-group-btn">
                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                     <span class="caret"></span>
                 </button>
-                <ul  id="demolist1" class="dropdown-menu">
+                <ul  id="demolist2" class="dropdown-menu">
+                    <li><a href="#">Telling people I live in Forbes</a></li>
+                    <li><a href="#">People not laughing at my jokes</a></li>
+                   <li><a href="#">Believing Wu has the best food</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+ <div class="row">
+    <div class = "col-sm-12">                                       
+        <label for="q1">I'm convinced that</label>
+          <div class="input-group"> 
+            <input placeholder= "Select an option from dropdown" name = "q1" type="TextBox" ID="datebox2" Class="form-control"></input>
+             <div class="input-group-btn">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+                <ul  id="demolist2" class="dropdown-menu">
                     <li><a href="#">Elon Musk is from the future</a></li>
                     <li><a href="#">The Earth is flat</a></li>
+                    <li><a href="#"></a></li>
                    
                 </ul>
             </div>
@@ -79,16 +114,16 @@
     <div class = "col-sm-12">                                       
         <label for="q2">Believe it or not I</label>
           <div class="input-group"> 
-            <input name = "q2" type="TextBox" ID="datebox1" Class="form-control" placeholder= "Select an option from dropdown"></input>
+            <input name = "q2" type="TextBox" ID="datebox3" Class="form-control" placeholder= "Select an option from dropdown"></input>
             <div class="input-group-btn">
                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                     <span class="caret"></span>
                 </button>
-                <ul  id="demolist1" class="dropdown-menu">
+                <ul  id="demolist3" class="dropdown-menu">
                     <li><a href="#">Hate tofu</a></li>
                     <li><a href="#">Think Forbes is the best res college</a></li>
                     <li><a href="#">Post tiger confessions about myself</a></li>   
-                    <li><a href="#">Didn't get into Stanford</a></li>   
+                    <li><a href="#">Didn't even get into Cornell</a></li>   
                     <li><a href="#">Go to NYC on every break</a></li>   
                    
                 </ul>
@@ -103,12 +138,12 @@
     <div class = "col-sm-12">                                       
         <label for="q3">Dream Dinner Guest</label>
           <div class="input-group"> 
-            <input placeholder= "Select an option from dropdown" name = "q3" type="TextBox" ID="datebox1" Class="form-control"></input>
+            <input placeholder= "Select an option from dropdown" name = "q3" type="TextBox" ID="datebox4" Class="form-control"></input>
             <div class="input-group-btn">
                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                     <span class="caret"></span>
                 </button>
-                <ul  id="demolist1" class="dropdown-menu">
+                <ul  id="demolist4" class="dropdown-menu">
                     <li><a href="#">President Eisgruber</a></li>
                     <li><a href="#">President Eisgruber :)</a></li>
                     <li><a href="#">President Eisgruber :))</a></li>   
