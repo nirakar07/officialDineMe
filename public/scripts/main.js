@@ -2,6 +2,11 @@ $('#datetimepicker1').on('click', function(){
     $('#datetime').val($(this).text());
 });
 
+$('#demolist0 li').on('click', function(){
+    $('#datebox0').val($(this).text());
+});
+
+
 $('#demolist1 li').on('click', function(){
     $('#datebox1').val($(this).text());
 });
@@ -16,6 +21,10 @@ $('#demolist3 li').on('click', function(){
 
 $('#demolist4 li').on('click', function(){
     $('#datebox4').val($(this).text());
+});
+
+$('#demolist5 li').on('click', function(){
+    $('#datebox5').val($(this).text());
 });
 
 $('#calendar span').on('click', function(){
